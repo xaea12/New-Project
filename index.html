@@ -1,7 +1,122 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <!-- <link rel="stylesheet" href="Monopoly.css"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Balthazar&display=swap" rel="stylesheet">
+</head>
+<style>
+    #border{
+    margin: auto;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 2px;
+    width:350px;
+    height: 400px;
+}
+#card{
+    background-color: white;
+    width: 315px;
+    height: 365px;
+    padding: 11px;
+    border: 2px solid black;
+}
+body{
+    background-color: lightblue;
+    letter-spacing: 1px;
+}
+#deed{
+    border: 2px solid black;
+    background-color: yellow;
+    margin:2px;
+    font-family: 'Balthazar', serif;
+    text-align: center;
+    height: 55px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around; 
+}
+#title{
+    padding-top:5px;
+    padding-bottom: 0px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+#name{
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+#body{
+    background-color: white;
+    font-size: 22px;
+}
+#left{
+    text-align: right;
+    float: left;
+    width:50%;
+    border: 0px;
+}
+#right{
+    text-align: center;
+    float: left;
+    width:50%;
+    border: 0px;
+}
+#style::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+#subtext{
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 10px;
+}
+#smallprint{
+    font-size: 14px;
+    letter-spacing: 0px;
+}
+#copyright{
+    font-size: 12px;
+    text-align: center;
+    padding-top:2px;
+    letter-spacing: 0px;
+}
+#rent{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 0px;
+}
+</style>
 <body>
-<h1>Hello World</h1>
-<p>I'm a sussy baka.</p>
+<div id="border">
+<div class= "std" id="card">  
+    <div id="deed"> 
+        <div id="title"> TITLE DEED </div>
+        <div id="name"> <strong> MARVIN GARDENS</strong> </div>
+    </div>
+    <div id="body"> 
+        <div id="rent"> RENT $24 </div>
+        <div id="style">
+            <div id="left"> With 1 House <br> With 2 House <br> With 3 House <br> With 4 House </div>
+            <div id="right"> $ 120. <br> 360. <br> 850. <br> 1025. </div>
+        </div>
+        <div id="subtext"> 
+            With HOTEL $1200. <br>
+            Mortgage Value $140. <br>
+            Houses cost $150. each <br>
+            Hotels, $150. plus 4 houses
+        </div>
+    </div>
+    <div id="smallprint"> If a player owns ALL the Lots of any Color-Group, the rent is Doubled on any Unimproved Lots in that group. </div>
+    <div id="copyright"> &copy; 1935 Hasbro, Inc. </div>
+</div>
+</div>
 </body>
 </html>
